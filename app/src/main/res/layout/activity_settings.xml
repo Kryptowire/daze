@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/settingsTV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settingsAppComp" />
+
+    <CheckBox
+        android:id="@+id/analyzeActivities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/analyzeActivities" />
+
+    <CheckBox
+        android:id="@+id/analyzeServices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/analyzeServices" />
+
+    <CheckBox
+        android:id="@+id/analyzeBroadcastReceivers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/analyzeBroadcastReceivers" />
+
+    <CheckBox
+        android:id="@+id/analyzeBroadcastActions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/analyzeBroadcastActions" />
+    
+    <CheckBox
+        android:id="@+id/analyzeProviders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/analyzeProviders" />
+    
+    <CheckBox
+        android:id="@+id/systemServer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/onlySystemServer" />
+        
+	<CheckBox
+        android:id="@+id/accelerated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/accelerated" />  
+        
+	<CheckBox
+        android:id="@+id/limitStacktrace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/limitRunwayCrashingProcesses" />  
+        
+	        
+	<CheckBox
+        android:id="@+id/privilegeEscalationCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/privilegeEscalation" />  
+        
+	<CheckBox
+        android:id="@+id/limitStacktracePerCrash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/oneStacktracePerCrash" /> 
+        
+	<CheckBox
+        android:id="@+id/aggressiveDynamicBroadcastTesting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/dynamicBroadcastTesting" /> 
+	
+        
+
+<!--         <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="targetIndividualApp"
+            android:text="@string/testIndividualApp" /> -->
+
+</LinearLayout>

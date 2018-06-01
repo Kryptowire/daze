@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Daze</string>
+    <string name="action_settings">Settings</string>
+    <string name="startAnalysis">Test All Apps</string>
+    <string name="stopAnalysis">Stop Analysis</string>
+    <string name="analyzeLogs">Analyze Logs</string>
+    <string name="examineResults">Examine Results</string>
+    <string name="settings">Settings</string>
+    <string name="intentBarrage">Send All Intents</string>
+    <string name="analyzeActivities">Analyze Activities</string>
+    <string name="analyzeServices">Analyze Services</string>
+    <string name="analyzeProviders">Analyze Content Providers</string>
+    <string name="analyzeBroadcastReceivers">Analyze Broadcast Receivers</string>
+    <string name="analyzeBroadcastActions">Analyze Broadcast Actions</string>
+    <string name="settingsAppComp">Application Component Categories to Include in Intent Sending</string>
+    <string name="onlySystemServer">Test Only system_server (core Android process)</string>
+    <string name="testIndividualApp">Test Individual App</string>
+    <string name="accelerated">Accelerated Testing</string>
+    <string name="privilegeEscalation">Perform System Monitoring for changes in settings, system properties, and SD card files</string>
+    <string name="limitRunwayCrashingProcesses">Limit Runaway Processes that Continually Crash (Use if You See a Process that Conintues to Crash Until the Device is Rebooted)</string>
+    <string name="oneStacktracePerCrash">Only Show one Stacktrace Per Crash in the Results</string>
+    <string name="dynamicBroadcastTesting">Test Broadcast Receivers while Testing Each Component</string>
+    <string name="oomAttack">Exhaust System Server Memory</string>
+    <string name="readme">Readme</string>
+    
+
+</resources>
