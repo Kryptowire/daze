@@ -1,7 +1,7 @@
 # Daze
 Daze: Null-fuzzing Intent Framework for Android
 
-This software was created for our paper in AsiaCCS 2018 named Dazed Droids: A Longitudinal Study of Android Inter-App Vulnerabilities.
+*This software was created for our paper in AsiaCCS 2018 named Dazed Droids: A Longitudinal Study of Android Inter-App Vulnerabilities.*
 
 Import the project into Android Studio and build from there or use 'gradlew build' command in the project directory to generate the APK file from the command line.
 
@@ -14,9 +14,9 @@ Use Daze at your own risk. During our testing, Daze accessed some exported compo
 # Granting required permissions via ADB to the App for Full Functionality
 
 This application needs to be granted two or three development permissions to function properly (depending on the version of Android). Please install Android Debugging Bridge (ADB) on your computer. 
-Then Grant the app the DUMP permission using the following ADB command: adb shell pm grant com.kryptowire.daze android.permission.DUMP
-Also grant the app the READ_LOGS permission using the following ADB command: adb shell pm grant com.kryptowire.daze android.permission.READ_LOGS 
-If you are using >= Android 8.0, grant the app the PACKAGE_USAGE_STATS permission using the following ADB command: adb shell pm grant com.kryptowire.daze android.permission.PACKAGE_USAGE_STATS 
+Then Grant the app the DUMP permission using the following ADB command: 'adb shell pm grant com.kryptowire.daze android.permission.DUMP'
+Also grant the app the READ_LOGS permission using the following ADB command: 'adb shell pm grant com.kryptowire.daze android.permission.READ_LOGS' 
+If you are using >= Android 8.0, grant the app the PACKAGE_USAGE_STATS permission using the following ADB command: 'adb shell pm grant com.kryptowire.daze android.permission.PACKAGE_USAGE_STATS'
 After you grant these three permissions, restart the application and then you will be able to use the buttons on the previous screen. The Send All Intents and the Exhaust System Server Memory buttons do not require any permissions to use.
 
 # Running the Shell Script for Automation
@@ -33,7 +33,7 @@ These two binaries do not need to be on the path if they are passed in using the
 # Monitoring Daze via Logcat
 
 Daze writes extensive information to the logcat log. Using logcat, you can view the progress of each intent being tested and any interesting results. All of the log tags in Daze start with the
-text of "ITA_". To monitor the progress of Daze, you can type the following command adb logcat | grep "ITA_" and examine the log messages or redirect the output to a file for later examination.
+text of "ITA_". To monitor the progress of Daze, you can type the following command 'adb logcat | grep "ITA_"' and examine the log messages or redirect the output to a file for later examination.
         
 # Monitoring Daze via Notifications
 
@@ -57,12 +57,11 @@ processes. In addition, it will show changes that occurred, if the option is sel
 Settings - Provides the user the option when prior to performing an analysis with Daze. The options allow the user whether to test all types of components or a subset there of. There is an option to test only the android
 package (system_server). Testing only this process will be the quickest way to discover any system crashes on the device if they exist. Once this option is selected, it will be tested with the
 Start Analysis option. Alternatively, the android package can be directly selected with the Test Individual App option. There is an option for accelerated testing to make the analysis go faster, but it cannot be used with system monitoring. There are options to limit it so that only one stacktrace per crash in an application component is shown.
-In addition some devices may have a process that will repeatedly crash until the device is rebooted. There is an option to filter these out. There is also an option to test the broadcast receivers that a component"
-dynamically registers in addition to testing the component itself. 
+In addition some devices may have a process that will repeatedly crash until the device is rebooted. There is an option to filter these out. There is also an option to test the broadcast receivers that a component dynamically registers in addition to testing the component itself. 
 
 Send All Intents - Will obtain all the intents possible to send on the device and send them. This has the possibility to crash the device.
 
-Exhaust System Server Memory - This will exhaust the heap of system_server and cause the device to eventually crash."
+Exhaust System Server Memory - This will exhaust the heap of system_server and cause the device to eventually crash.
 
 # Examining Results
 
